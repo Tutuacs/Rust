@@ -93,7 +93,7 @@
 // }
 
 // fn authorize(
-//     employee_name: &str,
+//     employee_name: &str, 
 //     location: ProtectedLocation,
 // ) -> Result<AuthorizationStatus, String> {
 //     // put your code here
@@ -114,3 +114,6 @@
 //     println!("{brody_authorized:?}");
 //     println!("{catherine_authorized:?}");
 // }
+fn main(){
+    
+}
