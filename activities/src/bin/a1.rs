@@ -15,10 +15,12 @@ fn main() {
 
 }
 
+/// Funcao mostra primeiro nome
 fn first_name(){
     print!("Arthur ");
 }
 
+/// Funcao mostra segundo nome
 fn last_name(){
     println!("Silva");
 }

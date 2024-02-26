@@ -13,4 +13,26 @@
 // Notes:
 // * Use a HashMap for the furniture store stock
 
-fn main() {}
+use std::collections::HashMap;
+
+fn main() {
+
+    let mut stock_items: HashMap<&str, i32> = HashMap::new();
+    stock_items.insert("Chair", 5);
+    stock_items.insert("Beds", 3);
+    stock_items.insert("Tables", 2);
+    stock_items.insert("Couches", 0);
+
+    let mut total: i32 = 0;
+
+    for (item, quantity) in stock_items.iter() {
+        total += quantity;
+        match (item, quantity) {
+            (no_item, 0) => println!("{} out of stock",no_item),
+            (any_item, any_quantity) => println!("{} units of {}", any_quantity, any_item),
+        }
+    }
+
+    println!("\ntotal stock: {}", total);
+    // format! -> function to concat strings/variables
+}
